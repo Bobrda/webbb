@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Magang D3TI</title>
+  <link rel="stylesheet" href="bs/css/bootstrap.css">
+  <style>
+    body {
+      background-color: #9e4de6;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar-custom {
+      background-color: #4a1e7d;
+      border: none;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav > li > a,
+    .navbar-custom .navbar-right > li > a {
+      color: white !important;
+    }
+
+    .navbar-custom .nav > li > a:hover,
+    .navbar-custom .navbar-right > li > a:hover {
+      color: #ffdd57 !important;
+      background-color: transparent !important;
+      transition: 0.3s ease;
+    }
+
+    .sertifikat-container {
+      background-color: #4a1e7d;
+      padding: 30px;
+      margin: 30px auto;
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .sertifikat-container h4 {
+      margin-bottom: 20px;
+    }
+
+    .sertifikat-container p {
+      margin: 5px 0;
+    }
+
+    .status {
+      font-weight: bold;
+      color: #00ff99;
+    }
+
+    .btn-print {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .btn-print:hover {
+      color: #ffdd57;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-custom">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Iconic_OpenAI_Logo.png" alt="Logo" width="30" style="display:inline-block; margin-right:10px;">Magang D3TI
+        </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Cetak Sertifikat</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">username@gmail.co</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="sertifikat-container">
+    <h4>Cetak Sertifikat</h4>
+    <p>Halo mahasiswa<br>udinzky rinawan</p>
+    <p>Dengan NIM<br>24.01.56164</p>
+    <p>Status Magang</p>
+    <p class="status">SELESAI &#10003;</p>
+    <button class="btn-print">
+      <span class="glyphicon glyphicon-print"></span> Cetak
+    </button>
+  </div>
+</body>
+
+</html>
